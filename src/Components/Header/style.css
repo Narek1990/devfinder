@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.hleft{
+    font-size: 24px;
+    color: white;
+    margin: 1%;
+}
+.hright{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: white;
+    width: 11%;
+    margin: 2%;
+    
+}
