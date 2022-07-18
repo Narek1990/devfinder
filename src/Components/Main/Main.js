@@ -36,7 +36,7 @@ export const Main = ({ data }) => {
           </div>
           <div className="data-footer">
             <span className="footer"><LocationIcon className="icons" />{data.location}</span>
-            <span className="footer"><TwitterIcon className="icons" />{data.twitter_username}</span>
+            <span className="footer"><TwitterIcon className="icons" />{data.twitter_username ? data.twitter_username : 'Not available'}</span>
             <span className="footer"><WebIcon className="icons" />{data.blog}</span>
             <span className="footer"><CompanyIcon className="icons" />{data.company}</span>
           </div>
