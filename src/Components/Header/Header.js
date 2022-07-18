@@ -6,8 +6,8 @@ export const Header = () => {
     <div className="header">
       <p className="hleft">devfinder</p>
       <div className="hright">
-        <p className="hright">LIGHT</p>
-        <p>
+        <p >LIGHT</p>
+        <p >
           <DisplayMode />
         </p>
       </div>

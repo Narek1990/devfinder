@@ -11,10 +11,10 @@
 }
 
 .App {
-  text-align: center;
   display: flex;
   justify-content: center;
   margin-top: 15%;
+  color: white;
 }
 body{
   background-color:var(--maincolor) ;

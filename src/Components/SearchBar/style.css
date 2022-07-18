@@ -1,8 +1,6 @@
 .searchBar{
     display: flex;
     justify-content:space-between ;
-    width: 100%;
-    border: 1px solid grey;
     border-radius: 9px;
     width: 95%;
     height: 60px;
@@ -15,7 +13,7 @@
     align-items: center;
 }
 .search-place{
-    width: 550px;
+    width: 80%;
     height: 95%;
     background: transparent;
     margin: 20px;
