@@ -15,8 +15,11 @@ const dateFormatter = (date) => {
 
 export const Main = ({ data }) => {
   return <div className="main-container">
+    
     {data ? (
+    
       <React.Fragment>
+        
         <img src={data.avatar_url} alt="" className="logo" />
         <div className="main-data">
           <div className="data-header">
@@ -25,7 +28,7 @@ export const Main = ({ data }) => {
 
           </div>
           <p className="title1">@octocat</p>
-          <p className="title2">This profile has no bio</p>
+          <p className="title2">{data.bio? data.bio : "This profile has no bio"}</p>
           <div className="data-body">
             <span>Repos</span>
             <span>Followers</span>

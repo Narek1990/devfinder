@@ -1,24 +1,17 @@
 .main-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #1E2A47;
-    width: 100%;
-    height: 350px;
     border-radius: 7px;
     margin-top:5%;
+    padding: 25px;
 }
-.main-data{
-    width: 70%;
-    height: 80%;
-    padding:8%;
-    
-}.data-header{
+.data-header{
     display: flex;
     justify-content: space-between;
 }
 .data-body{
-    width: 92%;
+    
     background-color:#141D2F ;
     padding: 5%;
     border-radius: 9px;
@@ -42,6 +35,7 @@ color: #0079FF;
     display: flex;
     flex-wrap: wrap;
     font-size: 12px;
+    
    
 }
 span{
@@ -54,11 +48,10 @@ opacity: 1;
 }
 
 .logo{
-    width: 22%;
-    height: 30%;
+    width: 100px;
+    height: 100px;
     border: 1px solid;
-    margin: 0 0 150px 30px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .data-footer{
