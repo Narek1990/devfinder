@@ -5,24 +5,25 @@ import { Header } from "../Components/Header/Header";
 import { Main } from "../Components/Main/Main";
 import { Searchbar } from "../Components/SearchBar/Searchbar";
 
-const ApiUrl = "https://api.github.com/users/octocat";
+const ApiUrl = "https://api.github.com/users/";
 
 const Layout = () => {
   const [userData, setUserData] = useState(null);
+  const [userName, setUserName] = useState("octocat");
 
   const getUserInfo = async () => {
-    const res = await axios.get(`${ApiUrl}`);
-    setUserData(res.data)
+    const res = await axios.get(`${ApiUrl}${userName}`);
+    setUserData(res.data);
   };
 
   useEffect(() => {
     getUserInfo();
-  }, [])
+  }, [userName]);
 
   return (
     <div className="Layout">
       <Header />
-      <Searchbar />
+      <Searchbar setUserName={setUserName} />
       <Main data={userData} />
     </div>
   );

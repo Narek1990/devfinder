@@ -52,6 +52,7 @@ opacity: 1;
     height: 100px;
     border: 1px solid;
     border-radius: 50%;
+    margin-right: 30px;
 }
 
 .data-footer{
@@ -67,4 +68,7 @@ opacity: 1;
 }
 .icons{
    padding: 0 15px 0 0 ;
+}
+.main-data{
+    width: 100%;
 }
