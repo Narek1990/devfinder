@@ -5,8 +5,8 @@ import SearchIcon from "../../resources/icons/IconSearch";
 export const Searchbar = ({ setUserName }) => {
   const [inputValue, setInputValue] = useState("");
   const SetNewUsername = () => {
-    // inputValue ? setUserName(inputValue) : alert("apsos");
-    inputValue && setUserName(inputValue);
+    inputValue ? setUserName(inputValue) : alert("there is no user");
+    // inputValue && setUserName(inputValue);
   };
 
   return (

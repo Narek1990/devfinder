@@ -23,7 +23,7 @@ export const Main = ({ data }) => {
           <img src={data.avatar_url} alt="" className="logo" />
           <div className="main-data">
             <div className="data-header">
-              <p className="title">{data.name}</p>
+              <p className="title">{data.name?data.name : data.login}</p>
               <p className="data-time">
                 Joined {dateFormatter(data.created_at)}
               </p>
@@ -36,29 +36,29 @@ export const Main = ({ data }) => {
               <span>Repos</span>
               <span>Followers</span>
               <span>Following</span>
-              <span className="calculated-data">{data.public_repos}</span>
-              <span className="calculated-data">{data.followers}</span>
-              <span className="calculated-data">{data.following}</span>
+              <a className="calculated-data" href={data.repos_url} target="_blank">{data.public_repos}</a>
+              <a className="calculated-data" href={data.followers_url} target="_blank">{data.followers}</a>
+              <a className="calculated-data" href={data.following_url} target="_blank">{data.following}</a>
             </div>
             <div className="data-footer">
               <span className="footer">
                 <LocationIcon className="icons" />
                 {data.location}
               </span>
-              <span className="footer">
-                <TwitterIcon className="icons" />
+              <a className="footer">
+                <TwitterIcon className="icons"  href={data.twitter_username} target="_blank" />
                 {data.twitter_username
                   ? data.twitter_username
                   : "Not available"}
-              </span>
-              <span className="footer">
+              </a>
+              <a className="footer" href={data.blog} target="_blank">
                 <WebIcon className="icons" />
                 {data.blog}
-              </span>
-              <span className="footer">
+              </a>
+              <a className="footer"  href={data.company} target="_blank">
                 <CompanyIcon className="icons" />
                 {data.company}
-              </span>
+              </a>
             </div>
           </div>
         </React.Fragment>

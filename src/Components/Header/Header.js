@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
-import DisplayMode from "../../resources/icons/IconSun";
+import LightMode from "../../resources/icons/IconSun";
+import DarkMode from "../../resources/icons/IconMoon";
 export const Header = () => {
   return (
     <div className="header">
@@ -8,7 +9,8 @@ export const Header = () => {
       <div className="hright">
         <p >LIGHT</p>
         <p >
-          <DisplayMode />
+          <LightMode/>
+         
         </p>
       </div>
     </div>

@@ -2,7 +2,6 @@
     display: flex;
     justify-content:space-between ;
     border-radius: 9px;
-    width: 95%;
     height: 60px;
     background-color: #1E2A47;
     padding: 5px 15px 0px 15px;
@@ -32,5 +31,11 @@
     border-radius: 9px;
     color: white;
     background-color: #0079ff;
-    opacity: 0.8;
+    
+}
+.search-btn:hover{
+    background-color: #0d6bd6;
+}
+.search-btn:active{
+    background-color: #0b65cc;
 }
