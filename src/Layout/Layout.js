@@ -10,6 +10,7 @@ const ApiUrl = "https://api.github.com/users/";
 const Layout = () => {
   const [userData, setUserData] = useState(null);
   const [userName, setUserName] = useState("octocat");
+  const [displayMode, setDisplayMode] = useState("Dark");
 
   const getUserInfo = async () => {
     const res = await axios.get(`${ApiUrl}${userName}`);
@@ -22,9 +23,11 @@ const Layout = () => {
 
   return (
     <div className="Layout">
-      <Header />
-      <Searchbar setUserName={setUserName} />
-      <Main data={userData} />
+      <div className="wrapper">
+        <Header displayMode={displayMode} setDisplayMode={setDisplayMode} />
+        <Searchbar setUserName={setUserName} />
+        <Main data={userData} />
+      </div>
     </div>
   );
 };

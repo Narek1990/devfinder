@@ -11,13 +11,10 @@
 }
 
 .App {
-  display: flex;
-  justify-content: center;
-  margin-top: 15%;
-  color: white;
+  height: 100vh;
 }
 body{
-  background-color:var(--maincolor) ;
+
   font-family: 'SpaceMonoBold';
 }
 p{

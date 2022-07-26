@@ -1,5 +1,12 @@
 .Layout{
-    width: 40%;
-    height: 60%;  
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   color: white;
+   background-color:var(--maincolor) ;
 
+}
+.wrapper{
+    margin-top: 15%;
+    width: 600px;
 }
