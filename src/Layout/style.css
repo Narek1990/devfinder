@@ -3,9 +3,17 @@
    display: flex;
    justify-content: center;
    color: white;
-   background-color:var(--maincolor) ;
+   background-color:var(--darkcolor) ;
 
 }
+.Layoutlight{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color:var(--lightcolor) ;
+ 
+ }
 .wrapper{
     margin-top: 15%;
     width: 600px;

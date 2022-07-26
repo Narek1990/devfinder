@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import SearchIcon from "../../resources/icons/IconSearch";
 
-export const Searchbar = ({ setUserName }) => {
+export const Searchbar = ({ setUserName, displayMode }) => {
   const [inputValue, setInputValue] = useState("");
   const SetNewUsername = () => {
     inputValue ? setUserName(inputValue) : alert("there is no user");

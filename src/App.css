@@ -12,10 +12,12 @@
 
 .App {
   height: 100vh;
+ 
 }
 body{
 
   font-family: 'SpaceMonoBold';
+  
 }
 p{
   margin: 0;

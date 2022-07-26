@@ -5,16 +5,24 @@ import DarkMode from "../../resources/icons/IconMoon";
 export const Header = ({ displayMode, setDisplayMode }) => {
   return (
     <div className="header">
-      <p className="hleft">devfinder</p>
+      <p className={`${displayMode === "Dark" ? "hleft" : "hleftlight"}`}>
+        devfinder
+      </p>
       {displayMode === "Dark" ? (
-        <div className="hright" onClick={() => setDisplayMode("Light")}>
-          <p>LIGHT</p>
+        <div
+          className={`${displayMode === "Dark" ? "hright" : "hrightlight"}`}
+          onClick={() => setDisplayMode("Light")}
+        >
+          <p>Dark</p>
 
           <LightMode />
         </div>
       ) : (
-        <div className="hright" onClick={() => setDisplayMode("Dark")}>
-          <p>Dark</p>
+        <div
+          className={`${displayMode === "Dark" ? "hright" : "hrightlight"}`}
+          onClick={() => setDisplayMode("Dark")}
+        >
+          <p>LIGHT</p>
 
           <DarkMode />
         </div>

@@ -8,6 +8,17 @@
     width: 100%;
     
 }
+.searchBarlight{
+    display: flex;
+    justify-content:space-between ;
+    border-radius: 9px;
+    height: 60px;
+    background-color: white;
+    padding: 10px 20px 8px 20px;
+    width: 100%;
+    
+}
+
 .input-area{
     display: flex;
     align-items: center;

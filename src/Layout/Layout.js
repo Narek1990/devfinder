@@ -22,7 +22,7 @@ const Layout = () => {
   }, [userName]);
 
   return (
-    <div className="Layout">
+    <div className={`${displayMode === "Dark" ? "Layout" : "Layoutlight"}`}>
       <div className="wrapper">
         <Header displayMode={displayMode} setDisplayMode={setDisplayMode} />
         <Searchbar setUserName={setUserName} />
