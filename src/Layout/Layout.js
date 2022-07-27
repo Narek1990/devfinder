@@ -26,7 +26,7 @@ const Layout = () => {
       <div className="wrapper">
         <Header displayMode={displayMode} setDisplayMode={setDisplayMode} />
         <Searchbar setUserName={setUserName} />
-        <Main data={userData} />
+        <Main data={userData} displayMode={displayMode} setDisplayMode={setDisplayMode}/>
       </div>
     </div>
   );

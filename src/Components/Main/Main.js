@@ -15,9 +15,11 @@ const dateFormatter = (date) => {
     .replace(/,/g, "");
 };
 
-export const Main = ({ data }) => {
+export const Main = ({ data,displayMode, setDisplayMode}) => {
+  console.log("displaymode",displayMode)
+  console.log("setdisplaymode",setDisplayMode)
   return (
-    <div className="main-container">
+    <div className={`${displayMode === "Dark" ? "main-container" : "main-containerlight"}`}>   
       {data ? (
         <React.Fragment>
           <img src={data.avatar_url} alt="" className="logo" />
@@ -68,5 +70,6 @@ export const Main = ({ data }) => {
         </React.Fragment>
       ) : null}
     </div>
+  
   );
 };

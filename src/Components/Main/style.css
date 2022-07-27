@@ -7,6 +7,16 @@
     padding: 20px;
     width: 100%;
 }
+.main-containerlight{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 7px;
+    margin-top:5%;
+    padding: 20px;
+    width: 100%;
+    color: black;
+}
 .data-header{
     display: flex;
     justify-content: space-between;
