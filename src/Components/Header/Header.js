@@ -20,8 +20,7 @@ export const Header = ({ displayMode, setDisplayMode }) => {
       ) : (
         <div
           className={`${displayMode === "Dark" ? "hright" : "hrightlight"}`}
-          onClick={() => setDisplayMode("Dark")}
-        >
+          onClick={() => setDisplayMode("Dark")}>
           <p>LIGHT</p>
 
           <DarkMode />

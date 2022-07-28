@@ -25,7 +25,7 @@ const Layout = () => {
     <div className={`${displayMode === "Dark" ? "Layout" : "Layoutlight"}`}>
       <div className="wrapper">
         <Header displayMode={displayMode} setDisplayMode={setDisplayMode} />
-        <Searchbar setUserName={setUserName} />
+        <Searchbar setUserName={setUserName} displayMode={displayMode} setDisplayMode={setDisplayMode} />
         <Main data={userData} displayMode={displayMode} setDisplayMode={setDisplayMode}/>
       </div>
     </div>

@@ -1,20 +1,20 @@
 .Layout{
-   height: 100%;
    display: flex;
    justify-content: center;
    color: white;
    background-color:var(--darkcolor) ;
-
+   transition: 1s;
+  
 }
 .Layoutlight{
-    height: 100%;
     display: flex;
     justify-content: center;
     color: black;
     background-color:var(--lightcolor) ;
- 
+    transition: 1s;
  }
 .wrapper{
-    margin-top: 15%;
+    margin-top: 10%;
     width: 600px;
+    height: 600px;
 }

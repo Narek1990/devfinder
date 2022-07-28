@@ -15,9 +15,7 @@ const dateFormatter = (date) => {
     .replace(/,/g, "");
 };
 
-export const Main = ({ data,displayMode, setDisplayMode}) => {
-  console.log("displaymode",displayMode)
-  console.log("setdisplaymode",setDisplayMode)
+export const Main = ({ data,displayMode, setDisplayMode}) => {  
   return (
     <div className={`${displayMode === "Dark" ? "main-container" : "main-containerlight"}`}>   
       {data ? (
@@ -34,15 +32,15 @@ export const Main = ({ data,displayMode, setDisplayMode}) => {
             <p className="title2">
               {data.bio ? data.bio : "This profile has no bio"}
             </p>
-            <div className="data-body">
+            <div className={`${displayMode === "Dark" ? "data-body" : "data-bodylight"}`}>
               <span>Repos</span>
               <span>Followers</span>
               <span>Following</span>
-              <a className="calculated-data">{data.public_repos}</a>
-              <a className="calculated-data">{data.followers}</a>
-              <a className="calculated-data">{data.following}</a>
+              <p className="calculated-data">{data.public_repos}</p>
+              <p className="calculated-data">{data.followers}</p>
+              <p className="calculated-data">{data.following}</p>
             </div>
-            <div className="data-footer">
+            <div className={`${displayMode === "Dark" ? "data-footer" : "data-footerlight"}`}>
               <span className="footer">
                 <LocationIcon className="icons" />
                 {data.location}
