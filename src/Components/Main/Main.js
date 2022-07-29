@@ -41,10 +41,10 @@ export const Main = ({ data,displayMode, setDisplayMode}) => {
               <p className="calculated-data">{data.following}</p>
             </div>
             <div className={`${displayMode === "Dark" ? "data-footer" : "data-footerlight"}`}>
-              <span className="footer">
+              <a className="footer">
                 <LocationIcon className="icons" />
                 {data.location}
-              </span>
+              </a>
               <a className="footer">
                 <TwitterIcon
                   className="icons"
