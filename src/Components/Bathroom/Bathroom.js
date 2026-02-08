@@ -162,9 +162,14 @@ export const Bathroom = ({ displayMode }) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
  
-    const ctx = canvas.getContext("2d");
-    // JSDOM (unit tests) does not implement Canvas2D. In that environment
-    // `getContext` returns null or throws; we just skip rendering.
+    let ctx = null;
+    try {
+      ctx = canvas.getContext("2d");
+    } catch (e) {
+      // JSDOM (unit tests) does not implement Canvas2D. In that environment
+      // `getContext` may throw; we just skip rendering.
+      return;
+    }
     if (!ctx) return;
     const w = canvas.width;
     const h = canvas.height;
