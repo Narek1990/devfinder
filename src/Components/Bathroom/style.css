@@ -1,0 +1,119 @@
+.bathroom {
+  margin-top: 16px;
+  border-radius: 12px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+ 
+.bathroom--dark {
+  background: rgba(30, 42, 71, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+ 
+.bathroom--light {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+ 
+.bathroom__headline {
+  font-size: 18px;
+  margin: 0 0 6px 0;
+  opacity: 0.95;
+}
+ 
+.bathroom__sub {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.75;
+}
+ 
+.bathroom__grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+ 
+.bathroom__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+ 
+.bathroom__label {
+  font-size: 12px;
+  opacity: 0.85;
+}
+ 
+.bathroom input[type="file"],
+.bathroom select {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.12);
+  color: inherit;
+}
+ 
+.bathroom--light input[type="file"],
+.bathroom--light select {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.03);
+}
+ 
+.bathroom__actions {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+  margin-top: 6px;
+}
+ 
+.bathroom__btn {
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 0;
+  background: #0079ff;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+ 
+.bathroom__btn:hover {
+  background: #0d6bd6;
+}
+ 
+.bathroom__error {
+  margin: 0;
+  font-size: 12px;
+  color: #ff6b6b;
+  opacity: 1;
+}
+ 
+.bathroom__preview {
+  width: 100%;
+}
+ 
+.bathroom__canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+ 
+.bathroom--light .bathroom__canvas {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+ 
+@media (max-width: 720px) {
+  .bathroom__grid {
+    grid-template-columns: 1fr;
+  }
+}
+

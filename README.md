@@ -1,4 +1,29 @@
-# Getting Started with Create React App
+## Bathroom material preview (4 m²)
+
+This app generates a simple **bathroom render preview** using your 3 provided material images:
+
+- **Santana**: cabin walls
+- **Dark White**: other walls
+- **Wood**: floor
+
+It renders a 2m × 2m room corner (**4 m²**) and lets you **download the result as a PNG**. All rendering happens locally in your browser.
+
+### Run locally
+
+```bash
+npm install
+npm start
+```
+
+### Use
+
+- Upload the 3 images in the form.
+- Optionally change which material is used on the **back wall** and **side wall**.
+- Click **Download PNG** to save the generated preview image.
+
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
