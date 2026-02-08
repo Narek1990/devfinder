@@ -6,14 +6,14 @@ export const Header = ({ displayMode, setDisplayMode }) => {
   return (
     <div className="header">
       <p className={`${displayMode === "Dark" ? "hleft" : "hleftlight"}`}>
-        devfinder
+        bathroom materials
       </p>
       {displayMode === "Dark" ? (
         <div
           className={`${displayMode === "Dark" ? "hright" : "hrightlight"}`}
           onClick={() => setDisplayMode("Light")}
         >
-          <p>Dark</p>
+          <p>LIGHT</p>
 
           <LightMode />
         </div>
@@ -21,7 +21,7 @@ export const Header = ({ displayMode, setDisplayMode }) => {
         <div
           className={`${displayMode === "Dark" ? "hright" : "hrightlight"}`}
           onClick={() => setDisplayMode("Dark")}>
-          <p>LIGHT</p>
+          <p>DARK</p>
 
           <DarkMode />
         </div>

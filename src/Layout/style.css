@@ -4,6 +4,7 @@
    color: white;
    background-color:var(--darkcolor) ;
    transition: 1s;
+   min-height: 100vh;
   
 }
 .Layoutlight{
@@ -12,9 +13,9 @@
     color: black;
     background-color:var(--lightcolor) ;
     transition: 1s;
+    min-height: 100vh;
  }
 .wrapper{
-    margin-top: 10%;
-    width: 600px;
-    height: 600px;
+    margin: 48px 16px;
+    width: min(980px, 100%);
 }
